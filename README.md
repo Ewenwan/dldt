@@ -6,6 +6,30 @@ This toolkit allows developers to deploy pre-trained deep learning models throug
 
 This open source version includes two components, namely Model Optimizer and Inference Engine, as well as CPU, GPU and heterogeneous plugins to accelerate deep learning inferencing on Intel(R) CPUs and Intel(R) Processor Graphics. It supports pre-trained models from the [Open Model Zoo](https://github.com/opencv/open_model_zoo/) along with 100+ open source and public models in popular formats such as Caffe*, Tensorflow*, MXNet* and ONNX*. 
 
+# 背景
+
+    最近的项目中，有客户提出在既有的CPU服务器上运行CNN的方案，即不添加nivida显卡已降低成本。因此调研Intel的OpenVINO方案。
+
+    OpenVINO是Intel提供的给予卷积神经网络的计算机视觉开发包。目的在能够快速的在Intel的硬件方案上部署和开发计算机视觉工程和方案。OpenVINO支持多种Intel硬件方案，包括CPU、集成显卡、Intel Movidius算力棒以及FPGA等。
+
+    官方给出的硬件和系统需求为：
+
+Processors
+
+    6th-8th Generation Intel® Core™
+    Intel® Xeon® v5 family
+    Intel® Xeon® v6 family
+    Intel® Pentium® processor N4200/5, N3350/5, N3450/5 with Intel® HD Graphics
+    Intel Movidius NCS
+
+Operating Systems
+
+    Ubuntu* 16.04 long-term support (LTS), 64-bit
+    CentOS* 7.4 or higher, 64-bit
+    Yocto Project* Poky Jethro* v2.0.3, 64-bit (for target only)
+ 
+
+
 ## Repository components:
 * [Inference Engine](https://software.intel.com/en-us/articles/OpenVINO-InferEngine)
 * [Model Optimizer](https://software.intel.com/en-us/articles/OpenVINO-ModelOptimizer)
